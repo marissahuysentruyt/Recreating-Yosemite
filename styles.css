@@ -1,0 +1,878 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+#home {
+    /* border: 1px solid red; */
+    display: flex;
+    background-color: #1b1b1b;
+    justify-content:center;
+
+}
+
+/* hamburger menu */
+#menu {
+    /* border: 1px solid red; */
+    color: #fff;
+    display: flex;
+    padding: 0% 2%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#menu button {
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+    font-size: 3.5rem;
+
+}
+
+.transparent {
+    border: transparent;
+    background-color: transparent;
+    cursor: default;
+    color: transparent;
+    font-size: 3.5rem;
+    padding: 0% 2%;
+}
+
+#menu #hiddenDropdown ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#menu #hiddenDropdown ul {
+    display: none;
+}
+
+#menu #hiddenDropdown ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* navigation */
+.top-nav {
+    /* border: 1px solid blue; */
+    width: 100%;
+    justify-items: center;
+}
+
+.top-nav a {
+    color: rgba( 250, 250, 250, 0.5);
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-weight: 300;
+    font-size: 0.75em;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: .3em;
+}
+
+.top-nav a:hover {
+    color: #FFB319;
+    border-bottom: 1px solid #FFB319;
+}
+
+.top-nav ul {
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.top-nav ul li.item3 {
+    /* border: 1px solid red; */
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.top-nav ul a li.item3:hover {
+    color: #FFB319;
+    border-bottom: 1px solid #FFB319;
+}
+
+/* hero section */
+.hero {
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.image-container {
+    /* border: 1px solid blue; */
+    background-image: url('https://images.unsplash.com/photo-1478772157037-9eaf7667d225?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1510&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40rem;
+}
+
+.image-container h1 {
+    font-size: 4rem;
+    letter-spacing: 0.3em;
+}
+
+.image-container h5 {
+    letter-spacing: 0.25em;
+    font-weight: 200;
+}
+
+.image-container .start-cta  {
+    /* border: 1px solid red; */
+    align-self: start;
+    position: relative;
+    bottom: -39.5%;
+    left: 0;
+    font-size: smaller;
+    text-align: center;
+}
+
+.image-container .start-cta a {
+    /* border: 1px solid white; */
+    background-color: #FFB319;
+    padding: .5em;
+    color: #000;
+    text-decoration: none;
+    transition: 0.15s ease-in-out;
+}
+
+.image-container .start-cta a:hover {
+    color: #FFB319;
+    background-color: #000;
+}
+
+.image-container .start-cta span {
+    display: inline-block;
+    margin-right: .75em;
+    /* border: 1px solid red; */
+    transform: rotate(45deg);
+}
+
+.sidebar {
+    /* border: 1px solid red; */
+    color: rgba( 250, 250, 250, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 6rem;
+    height: 40rem;
+    align-items: center;
+    background-color: #1b1b1b;
+}
+
+nav.sidebar ul {
+    /* border: 1px solid blue; */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.sidebar ul a {
+    text-decoration: none;
+    width: 100%;
+    /* border: 1px solid blue; */
+    justify-content: center;
+
+}
+
+.sidebar ul a img {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+}
+
+/* valley headline */
+.valley-headline {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+    background-color: #1b1b1b;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 42.5% 42.5%;
+    grid-template-rows: 30% 70%;
+    grid-gap: 7.5%;
+    
+}
+
+.valley-headline .grid-item {
+    /* border: 1px solid red; */
+}
+
+.valley-headline .image-slider {
+    /* border: 1px solid black; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 140%;
+    position: relative;
+    top: -50%;
+    justify-content: space-between;
+    /* overflow: hidden; how can i get this to hide the overflowing images, but not hide the tops of the images that are outside of the container?  */
+}
+
+.valley-headline .controls {
+    /* border: 1px solid white; */
+    margin-left: auto;
+    position: relative;
+    top: -50%;
+    display: flex;
+    align-items: flex-end;
+    width: 25%;
+    justify-content: flex-end;
+}
+
+.valley-headline .controls span {
+    border: 1px solid #6c6c6c;
+    border-radius: 45px;
+    padding: 4% 6%;
+    margin: 0% 5%;
+}
+
+.valley-headline .grid-item.headline {
+    /* border: 1px solid white; */
+    position: relative;
+    top: -15%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 2em;
+    direction: rtl;
+    width: 80%;
+    height: 80%;
+    letter-spacing: 0.2em;
+    margin-left: auto;
+    
+}
+
+.valley-headline .grid-item.headline #border {
+    background-color: #fff;
+    width: 10%;
+    height: 1%;
+    margin-top: 3%;
+}
+
+.valley-headline p.grid-item {
+    /* border: 1px solid white; */
+    position: relative;
+    top: -15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2.4;
+    width: 85%;
+    height: 70%;
+    color: #6c6c6c;
+}
+
+.valley-headline a.grid-item {
+    text-decoration: none;
+    color: #fff;
+    grid-column-start: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    transition: 0.15s ease-in-out;
+}
+
+.valley-headline a.grid-item span {
+    margin: 2%;
+}
+
+.valley-headline a.grid-item:hover {
+    color: #FFB319;
+}
+
+/* about the park: views, trees, waterfalls */
+.views, 
+.grid-container #your-trip {
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 42.5% 38%;
+    grid-column-gap: 7.5%;
+    grid-template-rows: auto;
+}
+
+.views .right, 
+.grid-container #your-trip .right {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.views .right h3, 
+.views .right h5, 
+.views .right a, 
+.waterfalls .left h3, 
+.waterfalls .left h5, 
+.waterfalls .left a, 
+.grid-container #your-trip .right h3, 
+.grid-container #your-trip .right  h5, 
+.grid-container #your-trip .right a {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.views .right h3,
+.waterfalls .left h3, 
+.grid-container #your-trip .right h3 {
+    font-weight: 600;
+    font-size: 1.5em;
+    padding-bottom: 2%;
+} 
+
+.views .right h5, 
+.waterfalls .left h5, 
+.grid-container #your-trip .right h5 {
+    color: #6c6c6c;
+    padding-bottom: 5%;
+    font-size: 1em;
+} 
+
+.views .right a, 
+.waterfalls .left a, 
+.grid-container #your-trip .right a {
+    color: #1b1b1b;
+    text-decoration: none;
+    margin-top: 5%;
+    font-size: 0.75em;
+    transition: all 0.2s ease-in-out;
+    justify-content: center;
+    border: 1px solid transparent;
+    font-weight: 600;
+} 
+
+.views .right a:hover, 
+.waterfalls .left a:hover, 
+.grid-container #your-trip .right a:hover {
+    border-bottom: 1px solid #6c6c6c;
+    color: #6c6c6c;
+ 
+}
+
+.views .right p, 
+.waterfalls .left p, 
+.grid-container #your-trip .right p {
+    line-height: 2.4;
+    color: #6c6c6c;
+
+}
+
+.views img, 
+.grid-container #your-trip img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -10%;
+}
+
+.video {
+    /* border: 1px solid red; */
+    /* background-image: url("https://images.unsplash.com/photo-1529025797902-c04dc9523016?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lhbnQlMjBzZXF1b2lhc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover*/
+    width: 90%;
+    height: 30rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    position: relative;
+    /* overflow: hidden; */
+    padding-top: 56.25%;
+}
+
+.video iframe {
+    /* border: 1px solid blue; */
+    width: 100%; 
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.title-card {
+    /* border: 1px solid yellow; */
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 40%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 40% 60%;
+    padding: 2%;
+    margin-left: 3%;
+    position: relative;
+    top: -30%;
+}
+
+.title-card h3 {
+    color: #fff;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.title-card p {
+    color: #6c6c6c;
+    /* padding-bottom: 10%; */
+    font-size: 0.75em;
+    line-height: 2.4em;;
+}
+
+.title-card .grid-item.c2r1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    /* border: 1px solid white; */
+}
+
+.title-card span {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    /* border: 1px solid white; */
+}
+
+.title-card span.borderleft {
+    border-left: 1px solid #6c6c6c;
+}
+
+.title-card span.borderright {
+    border-right: 1px solid #6c6c6c;
+}    
+
+.title-card .grid-item {
+    /* border: 1px solid red; */
+}
+
+/* .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.modalContent {
+    background-color: transparent; 
+    display: flex;
+    margin: auto;
+    width: 100%;
+    border: 1px solid red;
+    text-align: center;
+} 
+
+
+ #modalButton {
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-top: 10%;
+    cursor: pointer;
+} 
+
+    #modalButton img {
+    width: 15%;
+    height: auto;
+} 
+
+.close {
+    color: #ffb18a;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 0.5em;
+    transition: ease 0.2s;
+    margin-right: auto;
+}
+
+.close:hover {
+    color: #3E74B1;
+}
+*/
+
+.waterfalls {
+    /* border: 1px solid black; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: 42.5% 50%;
+    grid-column-gap: 7.5%;
+    grid-template-rows: auto;
+    margin: 5% auto 1% auto;
+}
+
+.waterfalls .left {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.waterfalls img {
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: -10%;
+}
+
+#experience {
+    /* border: 1px solid red; */
+    background-image: linear-gradient(rgba(27, 27, 27, 0.6) 0%, rgba(27, 27, 27, 0.8) 25%, rgba(27, 27, 27, 1) 50%),
+    url("https://images.unsplash.com/photo-1471282465966-5dd12d0de2e2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFsZiUyMGRvbWUlMjB5b3NlbWl0ZSUyMHZhbGxleSUyMGNsb3Vkc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    align-items: center;
+}
+
+#experience .title {
+    /* border: 1px solid red; */
+    color: #fff;
+    text-align: center;
+}
+
+#experience .title h3 {
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    
+}
+
+#experience .title h5 {
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.75em;
+}
+
+#experience .image-cards {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2em;
+    margin-top: 3%;
+    width: 80%;
+    padding-bottom: 7%;
+}
+
+#experience .image-cards .image-card1, 
+#experience .image-cards .image-card2, 
+#experience .image-cards .image-card3 {
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#experience .image-cards .image-card1 img, 
+#experience .image-cards .image-card2 img, 
+#experience .image-cards .image-card3 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 7%;
+}
+
+#experience .image-cards .image-card1 a, 
+#experience .image-cards .image-card2 a, 
+#experience .image-cards .image-card3 a, 
+#experience .image-cards .image-card1 h4, 
+#experience .image-cards .image-card2 h4, 
+#experience .image-cards .image-card3 h4 {
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#experience .image-cards .image-card1 a, 
+#experience .image-cards .image-card2 a, 
+#experience .image-cards .image-card3 a {
+    border: 1px solid transparent;
+    font-size: 0.75em;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+#experience .image-cards .image-card1 a:hover, 
+#experience .image-cards .image-card2 a:hover, 
+#experience .image-cards .image-card3 a:hover {
+    color: #FFB319;
+    border-bottom: 1px solid #FFB319;
+}
+
+#experience .image-cards .image-card1 p, 
+#experience .image-cards .image-card2 p, 
+#experience .image-cards .image-card3 p {
+    color: #6c6c6c;
+    line-height: 2;
+}
+
+.wildlife {
+    /* border: 1px solid red; */
+    background-color: #1b1b1b;
+    padding: 0 7.5%;
+}
+
+/*.wildlife .container {
+    border: 1px solid red; 
+    background-image: url("https://images.unsplash.com/photo-1444845026749-81acc3926736?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDB8fGZveCUyMGZvcmVzdHxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}*/
+
+.wildlife .container img {
+    width: 100%;
+    height: auto; 
+    z-index: 0;
+    /* border: 1px solid blue; */
+}
+
+.wildlife .container .title-card {
+    /* border: 1px solid blue; */
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 20% auto;
+    padding-bottom: 3%;
+    margin-left: 55%;
+    position: relative;
+    top: -65px;
+}
+
+.wildlife .container .title-card h3 { 
+    /* border: 1px solid red; */
+}
+
+.wildlife .container .title-card p { 
+    /* border: 1px solid red; */
+    
+}
+
+/*get spans to align to end of grid-item, but keep border where it is now...div inside again to line up to end of grid-item?
+.grid-item.c2r1 {
+    border: 1px solid red;
+    justify-content: flex-end;
+} */
+
+.stories {
+    /* border: 1px solid red;  */
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.stories .heading {
+    /* border: 1px solid red;  */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+.stories h3 {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 1.5em;  
+}
+
+.stories h5 {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: #6c6c6c;
+}
+
+.stories-container {
+    /* border: 1px solid red;  */
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 22% 22% 22% 22% 22%;
+    grid-gap: 1.5%;
+    position: relative;
+    top: 0;
+    left: -6%;
+}
+
+.stories-container img {
+    /* border: 1px solid purple; */
+    width: 100%;
+    height: auto;
+
+}
+   
+.map {
+    /* border: 1px solid red; */
+    padding: 4%;
+}
+
+.map iframe {
+    /* border: 1px solid blue; */
+    z-index: 0;
+}
+
+.map > .title-card {
+    /* border: 1px solid red; */
+    z-index: 1;
+    position: relative;
+    top: -30%;
+}
+
+footer {
+    background-image: linear-gradient(rgba(27, 27, 27, 0.6) 0%, rgba(27, 27, 27, 0.9) 100%), 
+    url("https://images.unsplash.com/photo-1493036585941-4d04b76a4696?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fGhhbGYlMjBkb21lJTIweW9zZW1pdGUlMjB2YWxsZXl8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+    padding-top: 8%;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.2em;
+    /* border: 1px solid red; */
+}
+
+footer .footer-nav {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 3% auto;
+}
+
+footer .footer-nav ul {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-basis: 100%;
+    justify-content: space-around;
+}
+
+footer .footer-nav ul a {
+    border: 1px solid transparent;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    transition: all 0.2s ease-in-out;
+}
+
+footer .footer-nav ul a:hover {
+    color: #FFB319;
+    border-bottom: 1px solid #FFB319;
+}
+
+footer p.nps {
+    color: #6c6c6c;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    margin-bottom: 3%;
+}
+
+footer .footer-social {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 8%; 
+}
+
+footer .footer-social ul {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    background-color: transparent;
+    flex-basis: 15%;
+    padding-left: 2%;
+    align-items: center;
+}
+
+footer .footer-social ul a li img {
+    width: 50%;
+    height: auto;
+    /* border: 1px solid yellow; */
+    justify-content: center;
+}
+
+footer p.credit {
+    /* border: 1px solid red; */
+    color: #6c6c6c;
+    font-size: 0.5em;
+}
+
+footer p.credit a {
+    color: #6c6c6c;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+footer p.credit a:hover {
+    color: #FFB319;
+}
