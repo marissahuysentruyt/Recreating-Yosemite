@@ -1,5 +1,4 @@
-**#Recreating-Yosemite**
-Landing Page
+**Recreating-Yosemite**
 
 After finding this design on Dribbble, I attempted to build it. I'll add responsiveness and JS soon. Inspired by designs by Bart Ebberkink. 
 
